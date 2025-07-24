@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional estate survey and valuation services in Nigeria. Accurate, fast, and RICS-certified.">
+    <meta name="keywords" content="estate surveyor, valuation, property inspection, Lagos,Ibadan, Abuja, Nigeria, real estate, property survey">
+    <meta name="author" content="Dare Oladimeji & Co.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Dare Oladimeji & Co. | Estate Surveyors & Valuers">
+    <meta property="og:description" content="Trusted estate surveyors and valuers serving Nigeria with precision and integrity.">
+    <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
+    <meta property="og:type" content="website">
+    <title>Dare Oladimeji & Co. | Estate Surveyors & Valuers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS for animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        
+        /* Custom gradient */
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        
+        /* Hover effect for services */
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="text-blue-900 font-bold text-2xl">
+                        <span class="text-blue-600">Dare Oladimeji</span> & Co.
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-500 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-blue-900 hover:text-blue-600 font-medium">Home</a>
+                    <a href="#services" class="text-blue-900 hover:text-blue-600 font-medium">Services</a>
+                    <a href="#about" class="text-blue-900 hover:text-blue-600 font-medium">About</a>
+                    <a href="#testimonials" class="text-blue-900 hover:text-blue-600 font-medium">Testimonials</a>
+                    <a href="#contact" class="text-blue-900 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-blue-900 hover:text-blue-600">Home</a>
+                <a href="#services" class="block py-2 text-blue-900 hover:text-blue-600">Services</a>
+                <a href="#about" class="block py-2 text-blue-900 hover:text-blue-600">About</a>
+                <a href="#testimonials" class="block py-2 text-blue-900 hover:text-blue-600">Testimonials</a>
+                <a href="#contact" class="block py-2 text-blue-900 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Dare Oladimeji Estate Surveyors & Valuers</h1>
+                    <p class="text-xl mb-8 opacity-90">Accurate valuations, comprehensive surveys, and expert advice for residential and commercial properties.</p>
+                    <a href="#contact" class="bg-white text-blue-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 inline-block">Get a Quote</a>
+                </div>
+                <div class="md:w-1/2 fade-in delay-1">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Modern house" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Services</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">We provide comprehensive valuation and surveying services tailored to your specific needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 fade-in delay-1">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-home text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Residential Valuation</h3>
+                    <p class="text-gray-600 mb-4">Accurate market valuations for buying, selling, refinancing, or taxation purposes.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Market value assessment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Pre-purchase valuations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Probate & divorce valuations</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 fade-in delay-2">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-building text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Commercial Valuation</h3>
+                    <p class="text-gray-600 mb-4">Expert valuations for offices, retail spaces, industrial properties, and more.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Investment property valuation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Rental valuation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Development site appraisal</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 fade-in delay-3">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-clipboard-check text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Building Surveys</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive property inspections to identify defects and maintenance issues.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Full structural surveys</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Condition reports</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Defect analysis</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                    <img src=https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=100&q=80 alt="Surveyor at work" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12 fade-in delay-1">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">About Dare Oladimeji & Co.</h2>
+                    <div class="w-20 h-1 bg-blue-600 mb-6"></div>
+                    <p class="text-gray-600 mb-6">With over 15 years of experience in the property industry, our team of certified Estate Surveyors and Valuers provide accurate, reliable, and impartial property assessments.</p>
+                    <p class="text-gray-600 mb-6">We combine traditional valuation methods with cutting-edge technology to deliver comprehensive reports that stand up to scrutiny from banks, courts, and government agencies.</p>
+                    
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                            <i class="fas fa-award text-blue-600 mr-2"></i>
+                            <span class="text-sm font-medium">RICS Certified</span>
+                        </div>
+                        <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                            <i class="fas fa-shield-alt text-blue-600 mr-2"></i>
+                            <span class="text-sm font-medium">Fully Insured</span>
+                        </div>
+                        <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                            <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+                            <span class="text-sm font-medium">Nationwide Coverage</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 inline-block">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-blue-900 text-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Client Testimonials</h2>
+          <div class="w-20 h-1 bg-blue-400 mx-auto"></div>
+          <p class="mt-6 opacity-90 max-w-2xl mx-auto">Don't just take our word for it - here's what our clients say about our services.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-blue-800 p-8 rounded-lg fade-in delay-1">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-xl mr-2">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="mb-6 opacity-90">"Dare Oladimeji & Co. saved me from buying a 'Omo-onile' property in Lekki. Their survey exposed all the hidden defects the seller tried to cover up. God bless you!"</p>
+            <div class="flex items-center">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Amina Yusuf" class="w-12 h-12 rounded-full mr-4">
+              <div>
+                <h4 class="font-bold">Amina Yusuf</h4>
+                <p class="text-sm opacity-80">Lekki Home Buyer</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="bg-blue-800 p-8 rounded-lg fade-in delay-2">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-xl mr-2">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="mb-6 opacity-90">"As a real estate developer in Abuja, I trust only Dare Oladimeji for valuations. Their reports help me negotiate better prices and avoid '419' properties."</p>
+            <div class="flex items-center">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Emeka Okonkwo" class="w-12 h-12 rounded-full mr-4">
+              <div>
+                <h4 class="font-bold">Emeka Okonkwo</h4>
+                <p class="text-sm opacity-80">Abuja Developer</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="bg-blue-800 p-8 rounded-lg fade-in delay-3">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-xl mr-2">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="mb-6 opacity-90">"GTBank accepted their valuation report without any wahala! The process was smooth like eba. Now I have my mortgage for my Port Harcourt bungalow."</p>
+            <div class="flex items-center">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Chioma Eze" class="w-12 h-12 rounded-full mr-4">
+              <div>
+                <h4 class="font-bold">Chioma Eze</h4>
+                <p class="text-sm opacity-80">Port Harcourt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Get in Touch</h2>
+                    <div class="w-20 h-1 bg-blue-600 mb-6"></div>
+                    <p class="text-gray-600 mb-8">Ready to discuss your property valuation or survey needs? Fill out the form and we'll get back to you within 24 hours.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900 mb-1">Our Office</h4>
+                                <p class="text-gray-600">Moniya</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900 mb-1">Call Us</h4>
+                                <p class="text-gray-600">+2348071085751</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900 mb-1">Email Us</h4>
+                                <p class="text-gray-600">info@dareoladimeji.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h4 class="font-bold text-blue-900 mb-4">Business Hours</h4>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex justify-between py-2 border-b border-gray-200">
+                                <span class="text-gray-600">Monday - Friday</span>
+                                <span class="font-medium">9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="flex justify-between py-2">
+                                <span class="text-gray-600">Saturday</span>
+                                <span class="font-medium">10:00 AM - 5:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-12 fade-in delay-1">
+                    <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-6">Request a Quote</h3>
+                        <form id="contactForm" class="space-y-6" action="mailto:info@dareoladimeji.com" method="post" enctype="text/plain">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" required>
+                                <input type="hidden" name="subject" value="New Valuation Request">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" required>
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" required>
+                            </div>
+                            
+                            <div>
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Required</label>
+                                <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" required>
+                                    <option value="">Select a service</option>
+                                    <option value="residential">Residential Valuation</option>
+                                    <option value="commercial">Commercial Valuation</option>
+                                    <option value="survey">Building Survey</option>
+                                    <option value="other">Other Service</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Property Details</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" placeholder="Please provide property address and any specific requirements..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Submit Request
+                            </button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Dare Oladimeji & Co.</h3>
+                    <p class="opacity-80">Estate Surveyors & Valuers providing professional services with accuracy and integrity.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="opacity-80 hover:opacity-100 transition">Home</a></li>
+                        <li><a href="#services" class="opacity-80 hover:opacity-100 transition">Services</a></li>
+                        <li><a href="#about" class="opacity-80 hover:opacity-100 transition">About Us</a></li>
+                        <li><a href="#testimonials" class="opacity-80 hover:opacity-100 transition">Testimonials</a></li>
+                        <li><a href="#contact" class="opacity-80 hover:opacity-100 transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">Residential Valuation</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">Commercial Valuation</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">Building Surveys</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">Probate Valuations</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 transition">Matrimonial Valuations</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p class="opacity-80">Subscribe to our newsletter</p>
+                    <div class="mt-2 flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg text-gray-900 outline-none w-full">
+                        <button class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-500 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-12 pt-8 text-center opacity-80 text-sm">
+                <p>&copy; 2025 Dare Oladimeji & Co. All rights reserved. | <a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+        
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateOnScroll);
+        // Trigger once on page load
+        animateOnScroll();
+    </script>
+</body>
+</html>
