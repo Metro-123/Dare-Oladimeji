@@ -43,6 +43,63 @@
         .service-card {
             transition: all 0.3s ease;
         }
+        @keyframes dropDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.drop-down {
+  animation: dropDown 0.8s ease-out forwards;
+}
+@keyframes bounceDrop {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hover-bounce:hover {
+  animation: bounceDrop 0.5s ease-in-out;
+}
+
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.drop-down {
+  opacity: 0;
+  animation: dropDown 0.8s ease-out forwards;
+}
+
+@keyframes bounceHover {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.hover-bounce:hover {
+  animation: bounceHover 0.5s ease-in-out;
+}
+
+
     </style>
 </head>
 <body class="font-sans bg-gray-50">
@@ -180,15 +237,40 @@
                 </div>
             </div>
         </div>
-    </section>
+    
+<!-- Gladsome Apartment Section -->
+<section id="gladsome" class="py-20 bg-gray-100">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Partnership with Gladsome Apartments</h2>
+    <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+    <p class="text-gray-700 max-w-3xl mx-auto mb-8">
+      We are proud to partner with <strong>Gladsome Apartments</strong> in providing full facility and property management services, along with asset valuation and consulting. Located at Moniya, Ibadan, this collaboration showcases our commitment to excellence, transparency, and value-driven real estate support.
+    </p>
+
+    <div class="bg-white rounded-lg shadow-md p-6 text-left max-w-4xl mx-auto">
+      <h3 class="text-xl font-semibold mb-3 text-blue-900">What We Did</h3>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Comprehensive Facility and Property Management</li>
+        <li>Valuation of Plant, Machinery, and Equipment</li>
+        <li>Consultancy for Conflict Resolution, Insurance & Mortgage Support</li>
+        <li>Development of Project Management Plans</li>
+      </ul>
+    </div>
+
+    <a href="documents/GLADSOME_APARTMENT_CONSULTING_SERVICES.pdf" download class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition">
+      📄 Download Proposal PDF
+    </a>
+  </div>
+</section>
+
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
-                    <img src=https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=100&q=80 alt="Surveyor at work" class="rounded-lg shadow-xl">
-                </div>
+                  <img src="dare oladimeji.jpeg" alt="Dare Oladimeji" class="rounded-lg shadow-xl drop-down hover-bounce transition duration-300">
+            </div>
                 <div class="md:w-1/2 md:pl-12 fade-in delay-1">
                     <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">About Dare Oladimeji & Co.</h2>
                     <div class="w-20 h-1 bg-blue-600 mb-6"></div>
@@ -225,7 +307,7 @@
           <p class="mt-6 opacity-90 max-w-2xl mx-auto">Don't just take our word for it - here's what our clients say about our services.</p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Testimonial 1 -->
           <div class="bg-blue-800 p-8 rounded-lg fade-in delay-1">
             <div class="flex items-center mb-4">
@@ -275,7 +357,23 @@
                 <p class="text-sm opacity-80">Port Harcourt</p>
               </div>
             </div>
+          <!-- Testimonial 4 -->
+          <div class="bg-blue-800 p-8 rounded-lg fade-in delay-4">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-xl mr-2">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="mb-6 opacity-90">"We are impressed with the professionalism and attention to detail Dare Oladimeji & Co. brought to our project. Their insights, asset valuation accuracy, and hands-on management have been invaluable."</p>
+            <div class="flex items-center">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Gladsome MD" class="w-12 h-12 rounded-full mr-4">
+              <div>
+                <h4 class="font-bold">Managing Director</h4>
+                <p class="text-sm opacity-80">Gladsome Apartments, Ibadan</p>
+              </div>
+            </div>
           </div>
+</div>
         </div>
       </div>
     </section>
@@ -296,7 +394,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-blue-900 mb-1">Our Office</h4>
-                                <p class="text-gray-600">Moniya</p>
+                                <p class="text-gray-600">Office 28 & 29, Oloyede Shopping Complex, Opposite NNPC, New Oyo/Ibadan, Apapa, Moniya, Ibadan, Oyo State</p>
                             </div>
                         </div>
                         
